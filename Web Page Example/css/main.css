@@ -152,7 +152,7 @@ body
 
 .contenido 
 {
-    margin: 135px 0px;
+    margin: 140px 0px;
 }
 
 .pais
@@ -197,12 +197,7 @@ body
  }
 }
 
-@media only screen and (min-width: 500px) {
-    .contenido 
-    {
-        margin: 100px 0px;
-    }
-
+@media only screen and (min-width: 500px){
     .pais, .lema
     {
         font-size: 20px;
@@ -444,7 +439,6 @@ div.paralax-lema
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 50vh;
 }
 
 div.texto-lema 
@@ -467,33 +461,7 @@ div.texto-lema h3 span
     color: orange;
 }
 
-@media only screen and (min-width: 450px) {
-    div.texto-lema 
-    {
-        padding: 15% 0%;
-    }
-}
-
-@media only screen and (min-width: 580px) {
-    div.texto-lema 
-    {
-        padding: 15% 0%;
-    }
-}
-
-@media only screen and (min-width: 680px) {
-    div.texto-lema 
-    {
-        padding: 12% 0%;
-    }
-}
-
 @media only screen and (min-width: 768px) {
-    div.texto-lema 
-    {
-        padding: 9% 0%;
-    }
-
     div.texto-lema h2, 
     div.texto-lema h2
     {
