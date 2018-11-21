@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+nav/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -314,7 +314,7 @@ i.volver:hover
     background-color: orange;
 }
 
-div.nav-movil a
+nav.nav-movil a
 {
     padding: 2%;
     display: block;
@@ -323,13 +323,13 @@ div.nav-movil a
     text-align: center;
 }
 
-div.nav-movil a:nth-child(1)
+nav.nav-movil a:nth-child(1)
 {
     color: #B049CE;
     border-bottom: solid 4px #B049CE;
 }
 
-div.nav-movil a:hover 
+nav.nav-movil a:hover 
 {
     color: orange;
     transition: .5s;

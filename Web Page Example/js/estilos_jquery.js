@@ -1,16 +1,18 @@
-// $("div.nav-movil").hide();
+// =========MENU MOVIL====================
 
 $('div.menu-movil').click(menuMovil);
 $("i.volver").click(volver);
 
 function menuMovil(){
-	$(this).hide("div.menu-movil");
-	$("i.volver").show();	
-	$("div.nav-movil").fadeIn();
+	$("div.menu-movil").toggle("i.volver");
+	$("i.volver").fadeIn(800);	
+	$("nav.nav-movil").slideToggle();
 };
 
 function volver() {
-	$("div.menu-movil").show();
 	$("i.volver").hide();	
-	$("div.nav-movil").fadeOut();
+	$("nav.nav-movil").slideToggle();
+	$("div.menu-movil").fadeToggle();
+	// $("nav.nav-movil").slideDown();
 }
+// =====================================
