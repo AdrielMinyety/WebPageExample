@@ -152,7 +152,7 @@ body
 
 .contenido 
 {
-    margin: 140px 0px;
+    margin: 135px 0px;
 }
 
 .pais
@@ -197,7 +197,12 @@ body
  }
 }
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 500px) {
+    .contenido 
+    {
+        margin: 100px 0px;
+    }
+
     .pais, .lema
     {
         font-size: 20px;
@@ -256,6 +261,11 @@ body
     display: inline-block;
 }
 
+.nav-movil
+{
+    display: none;
+}
+
 .menu-movil span
 {
     display: block;
@@ -270,6 +280,22 @@ body
 {
     margin: 0px;
 }
+
+i.volver  
+{
+    display: none;
+    float: right;
+    line-height: 25px;
+    font-size: 2em;
+    color: orange;
+    cursor: pointer;
+}
+
+i.volver:hover 
+{
+    transition: all .7s ease;
+    color: #B049CE;
+} 
 
 .menu-movil 
 {
@@ -288,13 +314,35 @@ body
     background-color: orange;
 }
 
+div.nav-movil a
+{
+    padding: 2%;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+div.nav-movil a:nth-child(1)
+{
+    color: #B049CE;
+    border-bottom: solid 4px #B049CE;
+}
+
+div.nav-movil a:hover 
+{
+    color: orange;
+    transition: .5s;
+    border-bottom: solid 4px orange;
+}
+
 .navegacion 
 {
     display: none;
 }
 
 @media only screen and (min-width: 580px) {
-.menu-movil 
+.menu-movil, .nav-movil 
 {
     display: none;
 }
@@ -446,8 +494,9 @@ div.texto-lema
     text-align: center;
     color: #fff;
     font-weight: bold;
-    padding: 100px 0px;
+    position: center
     margin: 0px;
+    padding: 100px 0px;
 }
 
 div.texto-lema h2 
