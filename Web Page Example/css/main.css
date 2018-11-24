@@ -152,7 +152,8 @@ body
 
 .contenido 
 {
-    margin: 135px 0px;
+    /*height: 100vh;*/
+    margin: 0px 0px;
 }
 
 .pais
@@ -198,11 +199,6 @@ body
 }
 
 @media only screen and (min-width: 500px) {
-    .contenido 
-    {
-        margin: 100px 0px;
-    }
-
     .pais, .lema
     {
         font-size: 20px;
@@ -321,6 +317,7 @@ nav.nav-movil a
     text-decoration: none;
     color: white;
     text-align: center;
+    border-bottom: solid 4px black;
 }
 
 nav.nav-movil a:nth-child(1)
@@ -342,7 +339,7 @@ nav.nav-movil a:hover
 }
 
 @media only screen and (min-width: 580px) {
-.menu-movil, .nav-movil 
+.menu-movil, .nav-movil
 {
     display: none;
 }
