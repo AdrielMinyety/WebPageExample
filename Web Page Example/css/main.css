@@ -256,6 +256,7 @@ body
     width: 100%;
     transform: translateY(100);
     transition: all .8s ease;
+    top: -400px;
 }
 
 .contenedor 

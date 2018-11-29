@@ -29,6 +29,8 @@ function menuMovilDesplegable(){
 	$("i.btn-menu").toggleClass("fa-arrow-circle-left");
 };
 
+	var scroll = $(window).scrollTop();
+
 function stickyMenu() {
 	var scroll = $(window).scrollTop();
 
@@ -36,7 +38,7 @@ function stickyMenu() {
 		hideShowMenu();
 		if (!flag) {
 			console.log("FUNCIONA!!!");
-			$("div.barra").css({"position":"fixed", "top":"0px"});
+			$("div.barra").css({"position":"fixed"});
 			flag = true;
 		}
 	} else {
@@ -49,13 +51,13 @@ function stickyMenu() {
 
 function hideShowMenu() {
 	var currentScrollPos = window.pageYOffset;
+
 	if (prevScrollPos > currentScrollPos) {
 		$("div.barra").css({"top":"0px"});
 		console.log("sadas");
-		var flag2 = true;
 	} else {
-		$("div.barra").css({"top":"-400px"});
-		console.log("sadas2");
+			$("div.barra").css({"top":"-400px"});
+			console.log("sadas2");		
 	}
 
 	prevScrollPos = currentScrollPos;
