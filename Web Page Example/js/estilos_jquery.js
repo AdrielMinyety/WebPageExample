@@ -52,6 +52,7 @@ function hideShowMenu() {
 	if (prevScrollPos > currentScrollPos) {
 		$("div.barra").css({"top":"0px"});
 		console.log("sadas");
+		var flag2 = true;
 	} else {
 		$("div.barra").css({"top":"-400px"});
 		console.log("sadas2");

@@ -153,7 +153,9 @@ body
 .contenido 
 {
     /*height: 100vh;*/
-    margin: 0px 0px;
+    margin: 0px;
+    position: relative;
+    top: 33vh;
 }
 
 .pais
@@ -185,20 +187,40 @@ body
 {
     color: orange;
 }
-
-@media only screen and (max-width: 350px) {
-.pais 
-{
-    font-size: 12px;
+@media only screen and (max-height: 280px) {
+    .contenido 
+    {
+        top: 4vh;
+    }
 }
+@media only screen and (max-height: 380px) {
+    .contenido 
+    {
+        font-size: 8px;
+        top: 8vh;
+    }
+}
+@media only screen and (max-width: 350px) {
+     .contenido
+    {
+        top: 28vh;
+    }
+    .pais 
+    {
+        font-size: 12px;
+    }
 
-.nombre 
-{
-    font-size: 4em;
- }
+    .nombre 
+    {
+        font-size: 4em;
+    }
 }
 
 @media only screen and (min-width: 500px) {
+    .contenido 
+    {
+        top: 25vh;
+    }
     .pais, .lema
     {
         font-size: 20px;
@@ -213,7 +235,7 @@ body
 @media only screen and (min-width: 768px) {
     .contenido 
     {
-        margin: 48px 0px;
+        top: 20vh;
     }
 
     .pais, .lema 
