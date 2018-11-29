@@ -32,7 +32,7 @@ function menuMovilDesplegable(){
 function stickyMenu() {
 	var scroll = $(window).scrollTop();
 
-	if (scroll > $("div.hero").height() + 50) {
+	if (scroll > $("div.hero").height() + 125) {
 		hideShowMenu();
 		if (!flag) {
 			console.log("FUNCIONA!!!");
