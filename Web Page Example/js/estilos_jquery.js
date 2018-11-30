@@ -26,9 +26,8 @@ $(window).on("resize", function() {
 function menuMovilDesplegable(){
 	$("nav.navegacion").slideToggle();
 	$("i.btn-menu").toggleClass("fa-bars");
-	$("i.btn-menu").toggleClass("fa-chevron-circle-up");
+	$("i.btn-menu").toggleClass("fa-chevron-circle-left");
 };
-// <i class="fas fa-chevron-circle-left"></i>
 
 function stickyMenu() {
 	var scroll = $(window).scrollTop();
@@ -36,7 +35,7 @@ function stickyMenu() {
 	if (scroll > $("div.hero").height() + 125) {
 		hideShowMenu();
 		if (!flag) {
-			console.log("FUNCIONA!!!");
+			// console.log("FUNCIONA!!!");
 			$("div.barra").css({"position":"fixed"});
 			flag = true;
 		}
@@ -54,11 +53,11 @@ function hideShowMenu() {
 	if (prevScrollPos > currentScrollPos) {
 		$("div.barra").css({"top":"0px"});
 		$("div.detector").hide();
-		console.log("sadas");
+		// console.log("sadas");
 	} else {
 		$("div.barra").css({"top":"-400px"});
 		$("div.detector").show();
-		console.log("sadas2");		
+		// console.log("sadas2");		
 	}
 
 	prevScrollPos = currentScrollPos;
@@ -70,8 +69,6 @@ $("div.detector").mouseover(function() {
 	if (flagBarra) {
 		$("div.detector").hide();
 	}
-
-	console.log("PASOO");
 });
 // =====================================
 
