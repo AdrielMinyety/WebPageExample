@@ -323,6 +323,15 @@ nav.navegacion a:hover
     border-bottom: solid 4px orange;
 }
 
+div.detector 
+{
+    width: 100%;
+    height: 20px;
+    display: block;
+    position: fixed;
+    top: 0px;
+}
+
 @media only screen and (min-width: 580px) {
 .barra 
 {

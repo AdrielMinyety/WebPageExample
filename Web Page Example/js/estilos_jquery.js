@@ -13,23 +13,22 @@ $(window).on("resize", function() {
 	// Responsive
 	if ($(this).width() > 580) {
 		$("nav.navegacion").show();
-		$("i.btn-menu").addClass("fa-arrow-circle-left");
+		$("i.btn-menu").addClass("fa-chevron-circle-left");
 		$("i.btn-menu").removeClass("fa-bars");
 	} 
 	else {
 		$("nav.navegacion").hide();
 		$("i.btn-menu").addClass("fa-bars");
-		$("i.btn-menu").removeClass("fa-arrow-circle-left");
+		$("i.btn-menu").removeClass("fa-chevron-circle-left");
 	}
 });
 
 function menuMovilDesplegable(){
 	$("nav.navegacion").slideToggle();
 	$("i.btn-menu").toggleClass("fa-bars");
-	$("i.btn-menu").toggleClass("fa-arrow-circle-left");
+	$("i.btn-menu").toggleClass("fa-chevron-circle-up");
 };
-
-	var scroll = $(window).scrollTop();
+// <i class="fas fa-chevron-circle-left"></i>
 
 function stickyMenu() {
 	var scroll = $(window).scrollTop();
@@ -54,14 +53,26 @@ function hideShowMenu() {
 
 	if (prevScrollPos > currentScrollPos) {
 		$("div.barra").css({"top":"0px"});
+		$("div.detector").hide();
 		console.log("sadas");
 	} else {
-			$("div.barra").css({"top":"-400px"});
-			console.log("sadas2");		
+		$("div.barra").css({"top":"-400px"});
+		$("div.detector").show();
+		console.log("sadas2");		
 	}
 
 	prevScrollPos = currentScrollPos;
 }
+
+$("div.detector").mouseover(function() {
+	$("div.barra").css({"top":"0px"});
+	var flagBarra = true;
+	if (flagBarra) {
+		$("div.detector").hide();
+	}
+
+	console.log("PASOO");
+});
 // =====================================
 
 });
