@@ -431,6 +431,7 @@ div.info-tabla p
     text-align: center;
     font-weight: bolder;
     box-sizing: border-box;
+    margin-top: 4%; 
 }
 
 div.info-tabla p span 
@@ -450,7 +451,12 @@ div.info-tabla ul li i
 }
 
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 764px) {
+    .tb-descripcion
+    {
+        margin-top: 10% !important;
+    }
+
     section.tablas 
     {
         padding: 2%;
@@ -585,6 +591,13 @@ div.texto-lema time
     padding: 4%;
     text-align: center;
     text-shadow: 0px 0px 10px black;
+}
+
+@media only screen and (max-width: 340px) {
+    div.texto-lema time 
+    {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (min-width: 400px) {
